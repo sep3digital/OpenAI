@@ -2,7 +2,10 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
+# Load dotnet environment
 load_dotenv()
+
+# Call the API_Key from .env
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
